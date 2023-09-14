@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookler</title>
+    <!-- <link rel="stylesheet" href="/src/css/main.css"> -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/sidebar.css">
+    <link rel="stylesheet" href="/src/css/header.css">
+    <link rel="stylesheet" href="/src/css/results.css">
+    <link rel="stylesheet" href="/src/css/filters.css">
+    <link rel="stylesheet" href="/src/css/checkout.css">
+</head>
+<body>
+
+    <nav class="sidebar close">
+        <img class="sidebar-bg" src="/src/images/header/sidebar-cloud.png" alt="bg" srcset="">
+        <div>
+            <div class="nav-head">
+                <a href="#" class="logo">
+                    <img src="/src/images/logo.svg" alt="logo" srcset="">
+                </a>
+                <div class="toggle">
+                    <img src="/src/images/Icon/Menu/Left.svg" alt="menu-icon" srcset="">
+                </div>
+            </div>
+           
+            <ul class="menu-links">
+                 <li class="nav-link nav-active">
+                    <a href="#">
+                        <img src="/src/images/Icon/Home/Fill.svg" alt="home icon">
+                        <span class="text nav-text">Home</span>
+                    </a>
+                 </li>
+                 <li class="nav-link">
+                    <a href="#">
+                        <img src="/src/images/Icon/Wallet/wallet.svg" alt="wallet icon">
+                        <span class="text nav-text">Wallet</span>
+                    </a>
+                 </li>
+                 <li class="nav-link">
+                    <a href="#">
+                        <img src="/src/images/Icon/Booking/Fill.svg" alt="Booking icon">
+                        <span class="text nav-text">Booking</span>
+                    </a>
+                 </li>
+                 <li class="nav-link">
+                    <a href="#">
+                        <img src="/src/images/Icon/Business/Fill.svg" alt="business icon">
+                        <span class="text nav-text">Business</span>
+                    </a>
+                 </li>
+                 <li class="nav-link">
+                    <a href="#">
+                        <img src="/src/images/Icon/Explore/Fill.svg" width="24px" height="24px" alt="explore icon">
+                        <span class="text nav-text">Explore</span>
+                    </a>
+                 </li>
+                 <li class="nav-link">
+                    <a href="#">
+                        <img src="/src/images/Icon/Support/Fill.svg" alt="support icon">
+                        <span class="text nav-text">Support</span>
+                    </a>
+                 </li>
+            </ul>
+        </div>
+
+
+
+        <div class="bottom">
+            <div class="menu-cta">
+                <a href="#" class="btn btn-primary">
+                    <div class="iconbg">
+                        <img src="/src/images/Icon/Premium/Fill.svg" width="24px" height="24px" alt="">
+                    </div>
+                    <span class="text">
+                        <span>Get Premium</span><br>
+                        <span>$39/m</span>
+                    </span>
+                    <span class="menu-cta-icon">
+                        <img src="/src/images/Icon/Fill-Arrow/Right.svg" alt="arrow icon">
+                    </span>
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <header class="header close">
+
+        <nav class="topbar">
+            <div class="left">
+                <div class="toggle">
+                    <img src="/src/images/Icon/Menu/Right.svg" alt="menu-icon" srcset="">
+                </div>
+                <a href="#" class="logo">
+                    <img src="/src/images/logo.svg" alt="logo" srcset="">
+                </a>                
+            </div>
+            <div class="right">
+                <button class="blur-btn partner-btn">
+                        <div class="btn-title">
+                            <div class="flex justify-center items-center">                            
+                                <img src="/src/images/Icon/Home/Add.svg" alt="home icon" width="14px">
+                            </div>
+                            <span>Become a partner</span>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="/src/images/Icon/Arrow/Down.svg" alt="arrow icon" width="14px">
+                        </div>
+                </button>
+                <button class="blur-btn">
+                        <div class="btn-title">
+                            <div class="flex justify-center items-center">                            
+                                <img src="/src/images/Icon/Home/Add.svg" alt="home icon" width="14px">
+                            </div>
+                            <span>Divyanshu Pal</span>
+                        </div>
+                        <div class="flex justify-center items-center">
+                            <img src="/src/images/Icon/Arrow/Down.svg" alt="arrow icon" width="14px">
+                        </div>
+                </button>
+            </div>
+        </nav>
+
+        <div class="action-nav">
+            <ul>
+                <li class="action-item action-item-active">
+                    <a href="#">
+                        <img src="/src/images/Icon/Transport/Plane.svg" alt="menu icon">
+                        <span>Flights</span>
+                    </a>
+                </li>
+                <li class="action-item">
+                    <a href="#">
+                        <img src="/src/images/Icon/Stay/Hotel.svg" alt="menu icon">
+                        <span>Hotel</span>
+                    </a>
+                </li>
+                <li class="action-item">
+                    <a href="#">
+                        <img src="/src/images/Icon/Stay/Villa.svg" alt="menu icon">
+                        <span>Villa</span>
+                    </a>
+                </li>
+                <li class="action-item">
+                    <a href="#">
+                        <img src="/src/images/Icon/Transport/Texi.svg" alt="menu icon">
+                        <span>Taxi</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="flex items-center">
+                <button class="blur-btn partner-btn">
+                    <div class="btn-title">
+                        <div class="flex justify-center items-center">                            
+                            <img src="/src/images/Icon/Home/Add.svg" alt="home icon" width="14px">
+                        </div>
+                        <span>Become a partner</span>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="/src/images/Icon/Arrow/Down.svg" alt="arrow icon" width="14px">
+                    </div>
+            </button>
+            <button class="blur-btn">
+                    <div class="btn-title">
+                        <div class="flex justify-center items-center">                            
+                            <img src="/src/images/Icon/Home/Add.svg" alt="home icon" width="14px">
+                        </div>
+                        <span>Divyanshu Pal</span>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <img src="/src/images/Icon/Arrow/Down.svg" alt="arrow icon" width="14px">
+                    </div>
+            </button>
+            </div>
+        </div>
+
+        <img class="cloud1" src="/src/images/header/clouds1.png" alt="" srcset="">
+        <img class="cloud2" src="/src/images/header/clouds2.png" alt="" srcset="">
+
+    </header>
+
+    <section class="action close">
+        
+        <div class="flight-search flex justify-between items-center">
+            <div class="fl-left flex">
+                <div class="inputgrp">
+                    <div>Type</div>
+                    <div class="inputcomp">
+                        <input type="text" value="onway" name="type">
+                        <img src="/src/images/Icon/Arrow/Down.svg" alt="">
+                    </div>
+                </div>
+                <div class="inputgrp">
+                    <div>from</div>
+                    <div class="inputcomp">
+                        <input type="text" value="Dhaka,Bangladesh" name="type">
+                    </div>
+                </div>
+                <div class="inputgrp">
+                    <div>Type</div>
+                    <div class="inputcomp">
+                        <input type="text" value="New Delhi, India" name="type">
+                    </div>
+                </div>
+                <div class="inputgrp">
+                    <div>Type</div>
+                    <div class="inputcomp">
+                        <input type="text" value="3 Persons" name="type">
+                        <img src="/src/images/Icon/Arrow/Down.svg" alt="">
+                    </div>
+                </div>
+                <div class="inputgrp">
+                    <div>Departure - Return</div>
+                    <div class="inputcomp">
+                        <input type="text" value="3 Persons" name="type">
+                        <img src="/src/images/Icon/calendar/fill.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="fl-right">
+                <button>Search Fligth</button>
+            </div>
+
+        </div>
+
+        <div class="results">
+            <div class="left">
+                <div class="result-nav">
+                    <div class="rh">
+                        <span class="rh-title">Payments Options</span>
+                        <div>
+                            <span>The session will expire in </span>
+                            <span>26 minutes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-display">
+                        <div class="progress">
+                            <div class="p-line"></div>
+                            <div class="p-item">
+                                <div class="pay-prog">     
+                                    <div class="state"><img src="/src/images/Icon/Checkmark/01.svg" width="10px" alt=""></div>
+                                    <div class="p-name">Flight Selected</div>   
+                                </div>
+                                <div class="pay-prog">     
+                                    <div class="state"><img src="/src/images/Icon/Checkmark/01.svg" width="10px" alt=""></div>
+                                    <div class="p-name">Flight Details</div>   
+                                </div>
+                                <div class="pay-prog">     
+                                    <div class="state">3</div>
+                                    <div class="p-name">Flight Booking</div>   
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="payment-section">
+                            <div class="payment-title">Payment Method</div>
+                            <div class="p-options">
+                                <div class="pay-opt active">
+                                    <div class="p-icon">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_449_15483)">
+                                            <path d="M16.6383 5.24415L13.5 2.09988V14.6998H17.7V7.79712C17.7 6.83863 17.3178 5.91974 16.6383 5.24415Z" fill="#FFB782"/>
+                                            <path d="M2.7527 12.4045L0.380332 6.24552C0.142135 5.62724 0.450244 4.93272 1.06882 4.69453L12.2668 0.381156C12.8851 0.142959 13.5796 0.451068 13.8178 1.06965L16.1902 7.2286C16.4284 7.84688 16.1203 8.5414 15.5017 8.77959L4.30399 13.093C3.68538 13.3312 2.99119 13.0228 2.7527 12.4045Z" fill="#DE4C3C"/>
+                                            <path d="M14.6728 3.28802L1.24609 8.49239L2.1401 10.8132L15.5674 5.61121L14.6728 3.28802Z" fill="#7A4930"/>
+                                            <path d="M0.300293 8.09977V1.49979C0.300293 0.837105 0.837593 0.299805 1.50028 0.299805H13.5002C14.1629 0.299805 14.7002 0.837105 14.7002 1.49979V8.09974C14.7002 8.76243 14.1629 9.29973 13.5002 9.29973H1.50028C0.837593 9.29976 0.300293 8.76246 0.300293 8.09977Z" fill="#67BAF1"/>
+                                            <path d="M13.5 0.299805H12.225L3.2251 9.29975H13.5C14.1627 9.29975 14.7 8.76245 14.7 8.09976V1.49979C14.7 0.837105 14.1627 0.299805 13.5 0.299805Z" fill="#52A2DE"/>
+                                            <path d="M2.69999 5.10019H1.5V5.70019H2.69999V5.10019Z" fill="#5EB3D1"/>
+                                            <path d="M2.69999 6.90027H1.5V7.50028H2.69999V6.90027Z" fill="#5EB3D1"/>
+                                            <path d="M8.09989 6.90027H6.8999V7.50028H8.09989V6.90027Z" fill="#5EB3D1"/>
+                                            <path d="M4.49979 5.10019H3.2998V5.70019H4.49979V5.10019Z" fill="#5EB3D1"/>
+                                            <path d="M6.30009 5.10019H5.1001V5.70019H6.30009V5.10019Z" fill="#5EB3D1"/>
+                                            <path d="M8.09989 5.10019H6.8999V5.70019H8.09989V5.10019Z" fill="#5EB3D1"/>
+                                            <path d="M13.2001 1.49979H12.6001V2.39978H13.2001V1.49979Z" fill="#5EB3D1"/>
+                                            <path d="M11.9999 1.49979H11.3999V2.39978H11.9999V1.49979Z" fill="#5EB3D1"/>
+                                            <path d="M10.8002 1.49979H10.2002V2.39978H10.8002V1.49979Z" fill="#5EB3D1"/>
+                                            <path d="M9.6 1.49979H9V2.39978H9.6V1.49979Z" fill="#5EB3D1"/>
+                                            <path d="M17.6998 14.7001H12.2998V17.7001H17.6998V14.7001Z" fill="#88B337"/>
+                                            <path d="M11.4197 5.7198C10.9109 5.21279 10.0874 5.21429 9.58038 5.7231C9.09017 6.21511 9.07308 7.00561 9.54168 7.51829L12.0002 10.2003C11.2613 11.4936 11.2928 13.0884 12.0821 14.3514L12.3002 14.7003H16.2002V10.5003L11.4197 5.7198Z" fill="#FFB782"/>
+                                            <path d="M13.7997 15.6005H13.1997V16.2005H13.7997V15.6005Z" fill="#6B962A"/>
+                                            <path d="M1.5 3.41977V1.97978C1.5 1.71457 1.71478 1.49979 1.98 1.49979H3.41998C3.68519 1.49979 3.89998 1.71457 3.89998 1.97978V3.41977C3.89998 3.68498 3.68519 3.89976 3.41998 3.89976H1.98002C1.71481 3.89976 1.5 3.68495 1.5 3.41977Z" fill="#FDB62F"/>
+                                            <path d="M2.4 2.40036H1.5V3.00037H2.4V2.40036Z" fill="#FD7B2F"/>
+                                            <path d="M3.9 2.40036H3V3.00037H3.9V2.40036Z" fill="#FD7B2F"/>
+                                            <path d="M15.9002 10.4999C15.8207 10.4999 15.7442 10.4684 15.6881 10.412L14.4881 9.21198C14.3729 9.09288 14.3762 8.90299 14.4956 8.78779C14.612 8.6756 14.7962 8.6756 14.9123 8.78779L16.1123 9.98777C16.2293 10.1051 16.2293 10.295 16.1123 10.412C16.0559 10.4684 15.9797 10.4999 15.9002 10.4999Z" fill="#F2A46F"/>
+                                            <path d="M14.9999 3.17819V1.49998C14.999 0.671987 14.3279 0.000885709 13.4999 0H1.49998C0.671987 0.000885709 0.000885709 0.671987 0 1.49998V8.09993C0.00239141 8.86612 0.582885 9.50661 1.34518 9.58431L2.47287 12.5117C2.77076 13.2848 3.63867 13.67 4.41174 13.3721L11.4539 10.6595C10.9673 11.9306 11.1056 13.3562 11.8277 14.51L11.9999 14.7857V17.6999C11.9999 17.8655 12.1343 17.9999 12.2999 17.9999H17.6999C17.8655 17.9999 17.9998 17.8655 17.9998 17.6999V7.79725C17.9972 6.75985 17.584 5.76596 16.8505 5.03215L14.9999 3.17819ZM14.9999 4.97216L15.9104 7.33585C16.0889 7.79964 15.8576 8.32044 15.3938 8.49894L14.8733 8.69993C14.9564 8.51092 14.9996 8.30665 14.9999 8.09993V4.97216ZM0.600009 8.09995V1.49998C0.600009 1.00289 1.00292 0.599979 1.50001 0.599979H13.4999C13.997 0.599979 14.3999 1.00289 14.3999 1.49998V3.40676H14.3973L14.3999 3.41367V8.09995C14.3975 8.15215 14.3909 8.20435 14.3795 8.25537L11.6316 5.50707C10.9992 4.88938 9.98607 4.90107 9.36838 5.53347C8.77917 6.13646 8.75877 7.09284 9.32158 7.72046L10.4931 8.99995H1.49998C1.00289 8.99995 0.600009 8.59704 0.600009 8.09995ZM4.44328 9.59993L2.30999 10.4213L1.99438 9.59993H4.44328ZM4.19607 12.8123C3.73229 12.9911 3.21149 12.7598 3.0327 12.296L2.5266 10.9799L6.10767 9.5999V9.59813H11.0429L11.4329 10.0232L4.19607 12.8123ZM17.3999 17.3999H12.5999V14.9999H17.3999V17.3999ZM17.3999 14.3999H12.4664L12.3362 14.192C11.6048 13.0232 11.5757 11.5466 12.2603 10.3499C12.3251 10.2365 12.3092 10.0946 12.221 9.99832L9.76252 7.31634C9.38993 6.90835 9.41842 6.27563 9.82641 5.90275C10.2209 5.54244 10.829 5.55564 11.2073 5.93274L15.9877 10.712L16.4119 10.2878L15.3019 9.17783L15.6098 9.05782C16.3822 8.75993 16.7671 7.89264 16.4698 7.11983L15.4543 4.48313L16.4264 5.45694C17.0474 6.07764 17.3974 6.91913 17.3998 7.79722L17.3999 14.3999Z" fill="black"/>
+                                            <path d="M3.42016 4.20009C3.85097 4.20009 4.20015 3.85088 4.20015 3.4201V1.98012C4.20015 1.54931 3.85094 1.20013 3.42016 1.20013H1.98018C1.54937 1.20013 1.2002 1.54934 1.2002 1.98012V3.4201C1.2002 3.85091 1.5494 4.20009 1.98018 4.20009H3.42016ZM1.80017 3.4201V3.0001H2.40015V2.40009H1.80017V1.98012C1.80017 1.88083 1.88086 1.80011 1.98018 1.80011H3.42016C3.51945 1.80011 3.60017 1.8808 3.60017 1.98012V2.40009H3.00016V3.0001H3.60017V3.4201C3.60017 3.51939 3.51948 3.60011 3.42016 3.60011H1.98018C1.88086 3.60008 1.80017 3.51939 1.80017 3.4201Z" fill="white"/>
+                                            <path d="M2.69999 5.10019H1.5V5.70019H2.69999V5.10019Z" fill="black"/>
+                                            <path d="M2.69999 6.90027H1.5V7.50028H2.69999V6.90027Z" fill="black"/>
+                                            <path d="M8.09989 6.90027H6.8999V7.50028H8.09989V6.90027Z" fill="black"/>
+                                            <path d="M4.49979 5.10019H3.2998V5.70019H4.49979V5.10019Z" fill="black"/>
+                                            <path d="M6.30009 5.10019H5.1001V5.70019H6.30009V5.10019Z" fill="black"/>
+                                            <path d="M8.09989 5.10019H6.8999V5.70019H8.09989V5.10019Z" fill="black"/>
+                                            <path d="M13.2001 1.49979H12.6001V2.39978H13.2001V1.49979Z" fill="black"/>
+                                            <path d="M11.9999 1.49979H11.3999V2.39978H11.9999V1.49979Z" fill="black"/>
+                                            <path d="M10.8002 1.49979H10.2002V2.39978H10.8002V1.49979Z" fill="black"/>
+                                            <path d="M9.6 1.49979H9V2.39978H9.6V1.49979Z" fill="black"/>
+                                            <path d="M13.7997 15.6005H13.1997V16.2005H13.7997V15.6005Z" fill="black"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_449_15483">
+                                            <rect width="18" height="18" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>                                            
+                                    </div>
+                                    <div class="p-name">Credit/Debit Card</div>
+                                </div>
+                                <div class="pay-opt">
+                                    <div class="p-icon">
+                                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M18.8603 13.9404H2.07556C1.44724 13.9404 0.936035 13.4292 0.936035 12.8009V3.24319C0.936035 2.61486 1.44724 2.1037 2.07556 2.1037H18.8602C19.4886 2.1037 19.9998 2.61486 19.9998 3.24319V12.8009C19.9998 13.4292 19.4886 13.9404 18.8603 13.9404ZM18.8603 3.27565H18.8607H18.8603Z" fill="#FFEF31"/>
+                                            <path d="M18.8605 2.1037H10.4648V13.9404H18.8604C19.4887 13.9404 20 13.4292 20 12.8009V3.24319C20 2.61486 19.4888 2.1037 18.8605 2.1037Z" fill="#EAD000"/>
+                                            <path d="M17.0701 9.83753H12.8902C12.5666 9.83753 12.3042 9.57518 12.3042 9.25156C12.3042 8.92795 12.5666 8.66559 12.8902 8.66559H17.0701C17.3937 8.66559 17.6561 8.92795 17.6561 9.25156C17.6561 9.57518 17.3937 9.83753 17.0701 9.83753Z" fill="#152659"/>
+                                            <path d="M15.7027 12.1829H12.8902C12.5666 12.1829 12.3042 11.9206 12.3042 11.597C12.3042 11.2733 12.5666 11.011 12.8902 11.011H15.7027C16.0263 11.011 16.2886 11.2733 16.2886 11.597C16.2886 11.9206 16.0263 12.1829 15.7027 12.1829Z" fill="#152659"/>
+                                            <path d="M20 5.24806H8.30636C8.76682 5.06153 9.2717 4.80034 9.61125 4.46078C10.6288 3.44322 10.6288 1.78753 9.61125 0.77C9.11833 0.277078 8.46293 0.00561523 7.76586 0.00561523C7.06878 0.00561523 6.41342 0.277078 5.9205 0.77C5.61263 1.07787 5.36902 1.52177 5.18721 1.94511C5.0054 1.52177 4.76179 1.07787 4.45392 0.77C3.961 0.277078 3.30561 0.00561523 2.60857 0.00561523C1.91145 0.00561523 1.2561 0.277078 0.763174 0.77C-0.254392 1.78753 -0.254392 3.44322 0.763174 4.46082C1.10273 4.80038 1.60764 5.06157 2.06806 5.2481H0.936272V6.42005H3.63258L2.81921 7.21104C2.5872 7.43664 2.582 7.8076 2.8076 8.03965C3.0332 8.27169 3.40421 8.27681 3.63621 8.05121L4.68616 7.03017V13.3541C4.68616 13.6777 4.94852 13.9401 5.27214 13.9401C5.59575 13.9401 5.85811 13.6777 5.85811 13.3541V7.09802L6.89248 8.18298C7.0076 8.30377 7.16199 8.36459 7.31665 8.36459C7.46193 8.36459 7.60745 8.31088 7.72093 8.20274C7.95516 7.97941 7.96403 7.60853 7.7407 7.37425L6.83095 6.42001H20V5.24806ZM5.98047 3.21313C6.17864 2.5091 6.48757 1.8603 6.74919 1.59869C7.02077 1.32711 7.38181 1.17757 7.76586 1.17757C8.14994 1.17757 8.51098 1.32715 8.78256 1.59869C9.34318 2.15931 9.34318 3.07148 8.78256 3.6321C8.52098 3.89368 7.87215 4.2026 7.16812 4.40082C6.46304 4.59931 5.98754 4.61501 5.79362 4.58759C5.76623 4.39387 5.78194 3.91825 5.98047 3.21313ZM1.59178 1.59869C1.86336 1.32711 2.2244 1.17757 2.60849 1.17757C2.99254 1.17757 3.35358 1.32715 3.62516 1.59869C3.88674 1.8603 4.19566 2.5091 4.39388 3.21313C4.59241 3.91829 4.60807 4.39391 4.58069 4.58763C4.38685 4.61505 3.91127 4.59931 3.20618 4.40086C2.50215 4.20264 1.85332 3.89376 1.59174 3.63214C1.03116 3.07148 1.03116 2.15931 1.59178 1.59869Z" fill="#F90053"/>
+                                            <path d="M20 5.24774H10.4648V6.41969H20V5.24774Z" fill="#A50043"/>
+                                            </svg>
+                                                                                       
+                                    </div>
+                                    <div class="p-name">Gift Card</div>
+                                </div>
+                                <div class="pay-opt">
+                                    <div class="p-icon">
+                                        <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.3246 10.2471H5.14355C4.77214 10.2471 4.46826 9.94326 4.46826 9.57185V0.793088C4.46826 0.421678 4.77214 0.117798 5.14355 0.117798H19.3246C19.696 0.117798 19.9999 0.421678 19.9999 0.793088V9.57185C19.9999 9.94326 19.696 10.2471 19.3246 10.2471Z" fill="#2978B8"/>
+                                            <path d="M4.46826 2.14371H19.9999V4.16958H4.46826V2.14371Z" fill="#B6B9BA"/>
+                                            <path d="M15.2729 14.2988H1.09179C0.720384 14.2988 0.416504 13.995 0.416504 13.6236V4.84478C0.416504 4.47338 0.720384 4.16949 1.09179 4.16949H15.2729C15.6443 4.16949 15.9482 4.47338 15.9482 4.84478V13.6236C15.9482 13.995 15.6443 14.2988 15.2729 14.2988Z" fill="#3397E8"/>
+                                            <path d="M1.76709 6.87042H3.79296V8.221H1.76709V6.87042Z" fill="#F7B030"/>
+                                            <path d="M2.44213 13.2863H1.76684C1.58114 13.2863 1.4292 13.1343 1.4292 12.9486C1.4292 12.7629 1.58114 12.611 1.76684 12.611H2.44213C2.62784 12.611 2.77978 12.7629 2.77978 12.9486C2.77978 13.1343 2.62784 13.2863 2.44213 13.2863Z" fill="#2978B8"/>
+                                            <path d="M7.16917 13.2863H3.79272C3.60702 13.2863 3.45508 13.1343 3.45508 12.9486C3.45508 12.7629 3.60702 12.611 3.79272 12.611H7.16917C7.35488 12.611 7.50682 12.7629 7.50682 12.9486C7.50682 13.1343 7.35488 13.2863 7.16917 13.2863Z" fill="#2978B8"/>
+                                            <path d="M3.11742 9.90948H1.76684C1.58114 9.90948 1.4292 9.75754 1.4292 9.57184C1.4292 9.38613 1.58114 9.23419 1.76684 9.23419H3.11742C3.30313 9.23419 3.45507 9.38613 3.45507 9.57184C3.45507 9.75754 3.30313 9.90948 3.11742 9.90948Z" fill="#2978B8"/>
+                                            <path d="M5.81859 9.90948H4.46802C4.28231 9.90948 4.13037 9.75754 4.13037 9.57184C4.13037 9.38613 4.28231 9.23419 4.46802 9.23419H5.81859C6.0043 9.23419 6.15624 9.38613 6.15624 9.57184C6.15624 9.75754 6.0043 9.90948 5.81859 9.90948Z" fill="#2978B8"/>
+                                            <path d="M8.51977 9.90948H7.16919C6.98348 9.90948 6.83154 9.75754 6.83154 9.57184C6.83154 9.38613 6.98348 9.23419 7.16919 9.23419H8.51977C8.70547 9.23419 8.85741 9.38613 8.85741 9.57184C8.85741 9.75754 8.70547 9.90948 8.51977 9.90948Z" fill="#2978B8"/>
+                                            <path d="M11.2209 9.90948H9.87036C9.68465 9.90948 9.53271 9.75754 9.53271 9.57184C9.53271 9.38613 9.68465 9.23419 9.87036 9.23419H11.2209C11.4066 9.23419 11.5586 9.38613 11.5586 9.57184C11.5586 9.75754 11.4066 9.90948 11.2209 9.90948Z" fill="#2978B8"/>
+                                            <path d="M3.79271 5.85815H1.76684C1.58114 5.85815 1.4292 5.70621 1.4292 5.52051C1.4292 5.3348 1.58114 5.18286 1.76684 5.18286H3.79271C3.97842 5.18286 4.13036 5.3348 4.13036 5.52051C4.13036 5.70621 3.97842 5.85815 3.79271 5.85815Z" fill="#2978B8"/>
+                                            <path d="M14.3635 5.67529H12.3376C12.1519 5.67529 12 5.52335 12 5.33765C12 5.15194 12.1519 5 12.3376 5H14.3635C14.5492 5 14.7012 5.15194 14.7012 5.33765C14.7012 5.52335 14.5492 5.67529 14.3635 5.67529Z" fill="#2978B8"/>
+                                            <path d="M14.2598 13.2857H12.9092C12.5378 13.2857 12.2339 12.9818 12.2339 12.6104C12.2339 12.239 12.5378 11.9351 12.9092 11.9351H14.2598C14.6312 11.9351 14.935 12.239 14.935 12.6104C14.935 12.9818 14.6312 13.2857 14.2598 13.2857Z" fill="#DADCDE"/>
+                                            <path d="M18.3115 9.23397H16.9609C16.5895 9.23397 16.2856 8.93009 16.2856 8.55868C16.2856 8.18727 16.5895 7.88339 16.9609 7.88339H18.3115C18.6829 7.88339 18.9868 8.18727 18.9868 8.55868C18.9868 8.93009 18.6829 9.23397 18.3115 9.23397Z" fill="#DADCDE"/>
+                                            </svg>
+                                                                                        
+                                    </div>
+                                    <div class="p-name">EMI on Credit/Debit Card</div>
+                                </div>
+                                <div class="pay-opt">
+                                    <div class="p-icon">
+                                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.63566 9.00182L1.28381 17.0441C0.892705 16.7768 0.660498 16.3322 0.664604 15.8585V2.14512C0.660498 1.67144 0.892705 1.22685 1.28381 0.959564L9.63566 9.00182Z" fill="#2196F3"/>
+                                            <path d="M12.5579 6.19244L9.63553 9.00157L1.28369 0.959307C1.31516 0.934918 1.34794 0.912229 1.38185 0.891344C1.82325 0.623812 2.3746 0.615175 2.82418 0.86869L12.5579 6.19244Z" fill="#4CAF50"/>
+                                            <path d="M16.0997 9.00138C16.1052 9.53613 15.8146 10.0301 15.3446 10.2851L12.5581 11.8105L9.63574 9.00138L12.5581 6.19226L15.3446 7.71763C15.8146 7.9727 16.1052 8.46664 16.0997 9.00138Z" fill="#FFC107"/>
+                                            <path d="M12.5579 11.8101L2.82418 17.1339C2.37361 17.3835 1.82435 17.3748 1.38185 17.1112C1.34794 17.0904 1.31516 17.0677 1.28369 17.0433L9.63557 9.00101L12.5579 11.8101Z" fill="#F44336"/>
+                                            </svg>
+                                                                                 
+                                    </div>
+                                    <div class="p-name">Google Play</div>
+                                </div>
+                                <div class="pay-opt">
+                                    <div class="p-icon">
+                                        <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M13.6303 4.86053C13.6593 4.62481 13.6745 4.38481 13.6745 4.14127C13.6745 2.09416 12.015 0.434601 9.96782 0.434601H3.77319C3.38353 0.434601 3.05085 0.715989 2.9862 1.10023L0.703645 14.6669C0.621738 15.1538 0.997012 15.5974 1.49063 15.5974H3.75616C4.14582 15.5974 4.48476 15.3162 4.54937 14.9319C4.54937 14.9319 4.55315 14.9094 4.55997 14.8689H4.56001L4.24429 16.7454C4.17215 17.1745 4.50289 17.5655 4.93796 17.5655H6.91996C7.26341 17.5655 7.55664 17.3175 7.61359 16.9788L8.17667 13.6323C8.27373 13.0554 8.77317 12.6329 9.35813 12.6329H9.87882C12.7071 12.6329 14.9998 10.3402 14.9998 7.51194C14.9998 6.41754 14.4589 5.45014 13.6303 4.86053Z" fill="#002987"/>
+                                            <path d="M13.6303 4.86069C13.2758 7.74414 10.8183 9.97688 7.83904 9.97688H6.11039C5.72023 9.97688 5.38327 10.2368 5.27757 10.6042L4.2443 16.7455C4.17213 17.1746 4.50287 17.5657 4.93793 17.5657H6.91993C7.26339 17.5657 7.55662 17.3176 7.61357 16.979L8.17664 13.6324C8.27371 13.0555 8.77315 12.6331 9.35811 12.6331H9.87879C12.7071 12.6331 14.9998 10.3403 14.9998 7.5121C14.9998 6.41769 14.4588 5.4503 13.6303 4.86069Z" fill="#0085CC"/>
+                                            <path d="M6.1102 9.97732H7.83885C10.8181 9.97732 13.2757 7.74458 13.6301 4.86117C13.0985 4.48288 12.4489 4.25964 11.7467 4.25964H7.23478C6.72109 4.25964 6.28248 4.6306 6.19723 5.13717L5.27734 10.6046C5.38304 10.2372 5.72004 9.97732 6.1102 9.97732Z" fill="#00186A"/>
+                                            </svg>
+                                                                                      
+                                    </div>
+                                    <div class="p-name">PayPal</div>
+                                </div>
+                                <div class="pay-opt">
+                                    <div class="p-icon">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.75 7.36249V16.85C0.75 17.4851 1.26491 18 1.9 18H16.85C17.4851 18 18 17.4851 18 16.85V6.49999C18 6.1823 17.7427 5.92499 17.425 5.92499H13.6875" fill="#4C506E"/>
+                                            <path d="M18 9.37499C18 9.0573 17.7427 8.79999 17.425 8.79999H2.1875C1.39371 8.79999 0.75 8.15628 0.75 7.36249C0.75 6.5687 1.39371 5.92499 2.1875 5.92499H17.425C17.7427 5.92499 18 6.1823 18 6.49999V9.37499Z" fill="#363A4F"/>
+                                            <path d="M2.1873 6.78751C1.86962 6.78751 1.6123 7.04482 1.6123 7.36251V8.67868C1.78854 8.75573 1.9826 8.80001 2.1873 8.80001H17.4248V6.78751H2.1873Z" fill="#2C2F41"/>
+                                            <path d="M14.9814 7.3625H3.19395C2.9559 7.3625 2.7627 7.1693 2.7627 6.93125C2.7627 6.6932 2.9559 6.5 3.19395 6.5H14.9814C15.2195 6.5 15.4127 6.6932 15.4127 6.93125C15.4127 7.1693 15.2195 7.3625 14.9814 7.3625Z" fill="#4C506E"/>
+                                            <path d="M9.375 9.375C11.7567 9.375 13.6875 7.44423 13.6875 5.0625C13.6875 2.68077 11.7567 0.75 9.375 0.75C6.99327 0.75 5.0625 2.68077 5.0625 5.0625C5.0625 7.44423 6.99327 9.375 9.375 9.375Z" fill="#F6B940"/>
+                                            <path d="M9.375 0.75C6.99335 0.75 5.0625 2.68085 5.0625 5.0625C5.0625 6.03482 5.38824 6.92866 5.93075 7.65H10.2375C10.8726 7.65 11.3875 7.13509 11.3875 6.5V1.24967C10.7863 0.9317 10.1024 0.75 9.375 0.75Z" fill="#FAD85D"/>
+                                            <path d="M6.4998 5.0625H5.9248C5.9248 6.96489 7.47242 8.5125 9.3748 8.5125V7.9375C7.78953 7.9375 6.4998 6.64777 6.4998 5.0625Z" fill="#FCE797"/>
+                                            <path d="M9.375 1.61249V2.18749C10.9603 2.18749 12.25 3.47721 12.25 5.06249H12.825C12.825 3.1601 11.2774 1.61249 9.375 1.61249Z" fill="#FCE797"/>
+                                            <path d="M11.3874 4.20001C11.3874 3.56578 10.8716 3.05001 10.2374 3.05001V2.47501H9.6624V3.05001H9.3749V2.47501H8.7999V3.05001H7.6499V3.62501H8.2249V6.50001H7.6499V7.07501H8.7999V7.65001H9.3749V7.07501H9.6624V7.65001H10.2374V7.07501C10.8716 7.07501 11.3874 6.55923 11.3874 5.92501C11.3874 5.58001 11.2316 5.27353 10.9901 5.06251C11.2316 4.85148 11.3874 4.54501 11.3874 4.20001ZM10.8124 5.92501C10.8124 6.24212 10.5545 6.50001 10.2374 6.50001H8.7999V5.35001H10.2374C10.5545 5.35001 10.8124 5.60789 10.8124 5.92501ZM8.7999 4.77501V3.62501H10.2374C10.5545 3.62501 10.8124 3.88289 10.8124 4.20001C10.8124 4.51712 10.5545 4.77501 10.2374 4.77501H8.7999Z" fill="white"/>
+                                            <path d="M2.7627 8.79999V15.125C2.7627 15.7601 3.27761 16.275 3.9127 16.275H18.0002V9.37499C18.0002 9.0573 17.7429 8.79999 17.4252 8.79999H13.6877" fill="#787FAA"/>
+                                            <path d="M18.0001 11.675H15.4126C14.6188 11.675 13.9751 12.3187 13.9751 13.1125C13.9751 13.9063 14.6188 14.55 15.4126 14.55H18.0001" fill="#4C506E"/>
+                                            <path d="M15.4124 13.6875C15.73 13.6875 15.9874 13.4301 15.9874 13.1125C15.9874 12.7949 15.73 12.5375 15.4124 12.5375C15.0948 12.5375 14.8374 12.7949 14.8374 13.1125C14.8374 13.4301 15.0948 13.6875 15.4124 13.6875Z" fill="#363A4F"/>
+                                            <path d="M12.3938 10.2375H4.34385C4.1058 10.2375 3.9126 10.0443 3.9126 9.80625C3.9126 9.5682 4.1058 9.375 4.34385 9.375H12.3938C12.6319 9.375 12.8251 9.5682 12.8251 9.80625C12.8251 10.0443 12.6319 10.2375 12.3938 10.2375Z" fill="#9DA1BF"/>
+                                            <path d="M16.4188 15.7H8.36875C8.1307 15.7 7.9375 15.5068 7.9375 15.2687C7.9375 15.0307 8.1307 14.8375 8.36875 14.8375H16.4188C16.6568 14.8375 16.85 15.0307 16.85 15.2687C16.85 15.5068 16.6568 15.7 16.4188 15.7Z" fill="#9DA1BF"/>
+                                            </svg>
+                                                                                    
+                                    </div>
+                                    <div class="p-name">Wallet</div>
+                                </div>
+                            </div>
+                            <div class="form">
+                                <form>
+                                    <div class="input-grp">
+                                        <label for="">Card Number</label>
+                                        <input type="text" placeholder="Enter Card Number">
+                                    </div>
+                                    <div class="input-grp">
+                                        <label for="">Card Holder Name</label>
+                                        <input type="text" placeholder="Enter Card Holder Name">
+                                    </div>
+                                    <div class="card-det">
+                                        <div class="input-grp">
+                                            <label for="">Expiry Date</label>
+                                            <input type="text" placeholder="MM">
+                                        </div>
+                                        <div class="input-grp">
+                                            <label for="">Expiry Year</label>
+                                            <input type="text" placeholder="YY">
+                                        </div>
+                                        <div class="input-grp">
+                                            <label for="">CVV</label>
+                                            <input type="text" placeholder="CVV">
+                                        </div>
+                                    </div>
+                                    <div class="input-grp-c">
+                                        <input type="checkbox">
+                                        <label for=""> I accept the Fare Rules ,<a href="#"> the Privacy Policy</a></label>
+                                    </div>
+                                </form>
+                                <div class="total">
+                                    <div>
+                                        <span>$5000</span>
+                                        <span>USD</span>
+                                    </div>
+                                </div>
+                                <div class="p-btn">
+                                    <button class="pay-btn" type="submit">Pay Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+       
+
+
+                </div>
+            </div>
+
+            <div class="filters">
+                <div class="fi-head">Profile</div>
+                <div class="fi-body fb">
+                    <div class="userimg">DP</div>
+                    <div class="username">Divyanshu Pal</div>
+                    <div class="actype">Personal Account</div>
+                    <button class="pedit">Edit Profile</button>
+
+                </div>
+            </div>
+        </div>
+
+    </section>        
+</body>
+<style>
+    .result-nav div:nth-child(1){
+        justify-content: space-between;
+        width: 100%;
+    }
+    .rh-title{
+        border: none;
+    }
+    .fb{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        gap: 0px;
+
+    }
+    .userimg{
+        color: #FFF;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        border-radius: 9999px;
+        background: var(--color-solid-primary-10, rgba(10, 106, 218, 0.10));
+    }
+    .username{
+        color: #191D23;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    .actype{
+        color: #54556C;
+        font-family: Open Sans;
+        font-size: 10px;
+        font-weight: 400;
+        margin-top: 5px;
+    }
+    .pedit{
+        color: #191D23;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 999px;
+        margin-top: 20px;
+    }
+
+
+</style>
+<script src="/src/js/main.js"></script>
+<script>
+    const tabMenu = document.querySelector(".p-options");
+    let activeDrag = false;
+    tabMenu.addEventListener("mousemove", (drag) => {
+        if (!activeDrag){
+            tabMenu.classList.remove("dragging")
+            return
+        };
+        tabMenu.classList.add("dragging");
+        tabMenu.scrollLeft -= drag.movementX;
+    });
+    document.addEventListener("mouseup", () => {
+        activeDrag = false;
+    })
+    tabMenu.addEventListener("mousedown", () => {
+        activeDrag = true;
+    });
+</script>
+</html>
