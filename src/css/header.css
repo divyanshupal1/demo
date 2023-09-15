@@ -283,6 +283,7 @@ header{
 }
 .class-input{
     z-index: 1000000;
+    min-width:300px ;
     border-radius: 12px;
     position: absolute;
     top: 100%;
@@ -293,14 +294,15 @@ header{
     padding: 20px;
 }
 .cl-title{
-    color: #2E3758;
+    color: #0d101a;
     font-family: Open Sans;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 16px; /* 100% */
+    font-weight: 600;
+    line-height: 18px; /* 100% */
     letter-spacing: 0.04px;
     margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .class-input input,.class-input select{
     width: 100%;

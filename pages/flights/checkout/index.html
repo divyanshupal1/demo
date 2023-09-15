@@ -221,8 +221,61 @@
                         <img src="/src/images/Icon/Arrow/Down.svg" alt="">
                     </div>
                     <div class="class-input hidden">
-                        <div class="cl-title">Persons</div>
-                        <input  type="number" id="p-input" value="3" >
+                        <div></div>
+                        <div class="cl-title">Travellers</div>
+                        <div class="p-elem">
+                            <span>Adults</span>
+                            <div class="counter">
+                                <button id="subtr-adult" class="cbtn">-</button> <span class="cvalue" id="adult">3</span><button class="cbtn" id="add-adult">+</button>
+                                <script>
+                                    const addbtn = document.getElementById("add-adult");
+                                    const sub = document.getElementById("subtr-adult");
+                                    const value = document.getElementById("adult")
+                                    addbtn.addEventListener("click",()=>{
+                                        value.innerHTML = Number(value.innerHTML)+1;
+                                    })
+                                    sub.addEventListener("click",()=>{
+                                        value.innerHTML = Number(value.innerHTML)>0?Number(value.innerHTML)-1:Number(value.innerHTML);
+                                    })                                    
+                                </script>
+                            </div>
+                        </div>
+                        <div class="p-elem">
+                            <span>Child</span>
+                            <div class="counter">
+                                <button id="subtr-adult1" class="cbtn">-</button> <span class="cvalue" id="adult1">0</span><button class="cbtn" id="add-adult1">+</button>
+                                <script>
+                                    const addbtn1 = document.getElementById("add-adult1");
+                                    const sub1 = document.getElementById("subtr-adult1");
+                                    const value1 = document.getElementById("adult1")
+                                    addbtn1.addEventListener("click",()=>{
+                                        value1.innerHTML = Number(value1.innerHTML)+1;
+                                    })
+                                    sub1.addEventListener("click",()=>{
+                                        value1.innerHTML = Number(value1.innerHTML)>0?Number(value1.innerHTML)-1:Number(value1.innerHTML);
+                                    })                                    
+                                </script>
+                            </div>
+                        </div>
+                        <div class="p-elem">
+                            <span>Infants</span>
+                            <div class="counter">
+                                <button id="subtr-adult2" class="cbtn">-</button> <span class="cvalue" id="adult2">0</span><button class="cbtn" id="add-adult2">+</button>
+                                <script>
+                                    const addbtn2 = document.getElementById("add-adult2");
+                                    const sub2 = document.getElementById("subtr-adult2");
+                                    const value2 = document.getElementById("adult2")
+                                    addbtn2.addEventListener("click",()=>{
+                                        value2.innerHTML = Number(value2.innerHTML)+1;
+                                    })
+                                    sub2.addEventListener("click",()=>{
+                                        value2.innerHTML = Number(value2.innerHTML)>0?Number(value2.innerHTML)-1:Number(value2.innerHTML);
+                                    })                                    
+                                </script>
+                            </div>
+                        </div>
+                        
+                        
                         <div class="cl-title">Class</div>
                         <select name="class" id="class" val>
                             <option value="Business">Business</option>
@@ -234,11 +287,11 @@
             <script>
                 document.querySelector(".class-block").addEventListener("click",()=>{
                     document.querySelector(".class-input").classList.toggle("hidden");
+                    var val1 =  Number(document.getElementById("adult").innerHTML)
+                    var val2 =  Number(document.getElementById("adult1").innerHTML)
+                    var val3 =  Number(document.getElementById("adult2").innerHTML)
+                    document.querySelector("#person-count").innerHTML = `${val1+val2+val3} Persons`
                 })
-                function personchange(e){
-                    document.getElementById("person-count").innerHTML = e.target.value + " Person";
-                }
-                document.getElementById("p-input").addEventListener("change",(e)=> personchange(e));
             </script>
             <div class="fl-right">
                 <button>Search Fligth</button>
@@ -247,11 +300,14 @@
         </div>
         <div class="results-short">
             <div class="short-top">
-                <span class="pl">Dhaka</span>
-                <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 8H28M28 8L21 1M28 8L21 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                                
-                <span class="pl">Delhi</span>
+                <div>
+                    <span class="pl">Dhaka</span>
+                    <svg width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 8H28M28 8L21 1M28 8L21 15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                
+                    <span class="pl">Delhi</span>
+                </div>
+                <button class="edit-btn">Edit</button>
             </div>
             <div class="short-bottom">
                 <div class="short-grp">
@@ -570,8 +626,17 @@
     tabMenu.addEventListener("mousedown", () => {
         activeDrag = true;
     });
-    const short_form = document.querySelector(".results-short");
+    const short_form = document.querySelector(".edit-btn");
     short_form.addEventListener("click", () => {
+        if(short_form.textContent == "Edit"){
+            short_form.textContent = "Close"
+            short_form.setAttribute("style","background:red;")
+        }
+        else{
+            short_form.textContent = "Edit"
+            short_form.setAttribute("style","")
+        }
+
         document.querySelector(".flight-search").classList.toggle("hidden");
     });
 </script>

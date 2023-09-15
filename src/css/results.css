@@ -112,6 +112,7 @@
         flex-direction: column;
         height: auto;
         gap: 20px 20px;
+        padding:0px;
     } 
     .results .left,.results .filters{
         width: 100%;
@@ -236,6 +237,7 @@
     display: flex;
     align-items: center;
     padding-left: 10px;
+    padding-right: 10px;
     /* width: 100px; */
 }
 .airline-logo img{
@@ -285,14 +287,14 @@
     flex-direction: column;
     width: 100%;
     margin: auto;
-    border-radius: 180px;
+    border-radius: 16px;
     background: var(--color-solid-dark-05, rgba(25, 29, 35, 0.05));
     padding: 20px;
 }
 .short-top{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     gap: 0px 10px;
     margin-bottom: 10px
@@ -311,10 +313,17 @@
     font-weight: 700;
     line-height: 14px; /* 87.5% */;
 }
+.short-top button{
+    border: none;
+    padding: 10px 20px;
+    background-color: #177CFD;
+    color: var(--color-white);
+    border-radius: 8px;
+}
 .short-bottom{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     gap: 0px 20px;
     flex-wrap: wrap;
@@ -322,7 +331,7 @@
 .short-grp{
     display: flex;
     align-items: center;
-    gap: 0px 10px;
+    gap: 0px 5px;
 }
 .flight-search.hidden{
     display: flex;
@@ -376,4 +385,32 @@
     position: absolute;
     top: 100%;
     z-index: 100;
+}
+.cbtn{
+    padding: 2px 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 999px;
+    border: none;
+    background-color: #177CFD;
+    color: #EAEFF6;
+}
+.cvalue{
+    padding: 2px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.p-elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px;
+    color: #2a2a2a !important;
+    line-height: 16px !important;
+    padding-left: 0px !important;
+    letter-spacing: 0.293px;
+    text-transform: uppercase;
 }

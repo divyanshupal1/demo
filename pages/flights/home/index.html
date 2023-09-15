@@ -98,7 +98,7 @@
                 </a>                
             </div>
             <div class="right">
-                <button class="blur-btn partner-btn">
+                <button type="button" class="blur-btn partner-btn">
                         <div class="btn-title">
                             <div class="flex justify-center items-center">                            
                                 <img src="/src/images/Icon/Home/Add.svg" alt="home icon" width="14px">
@@ -109,7 +109,7 @@
                             <img src="/src/images/Icon/Arrow/Down.svg" alt="arrow icon" width="14px">
                         </div>
                 </button>
-                <button class="blur-btn">
+                <button type="button" class="blur-btn">
                         <div class="btn-title">
                             <div class="flex justify-center items-center">                            
                                 <img src="/src/images/Icon/Home/Add.svg" alt="home icon" width="14px">
@@ -125,7 +125,7 @@
 
         <nav class="btnbar">
             <div class="right">
-                <button class="blur-btn partner-btn">
+                <button type="button" class="blur-btn partner-btn">
                         <div class="btn-title">
                             <div class="flex justify-center items-center">                            
                                 <img src="/src/images/Icon/Home/Add.svg" alt="home icon" width="14px">
@@ -136,7 +136,7 @@
                             <img src="/src/images/Icon/Arrow/Down.svg" alt="arrow icon" width="14px">
                         </div>
                 </button>
-                <button class="blur-btn">
+                <button type="button" type="button" class="blur-btn">
                         <div class="btn-title">
                             <div class="flex justify-center items-center">                            
                                 <img src="/src/images/Icon/Home/Add.svg" alt="home icon" width="14px">
@@ -240,8 +240,61 @@
                                 <span id="class-type">Business <img src="/src/images/Icon/Arrow/Down.svg" alt="arrow-down" width="16px"></span>
                             </div>
                             <div class="class-input hidden">
-                                <div class="cl-title">Persons</div>
-                                <input  type="number" id="p-input" value="3" >
+                                <div></div>
+                                <div class="cl-title">Travellers</div>
+                                <div class="p-elem">
+                                    <span>Adults</span>
+                                    <div class="counter">
+                                        <button type="button" type="button" id="subtr-adult" class="cbtn">-</button> <span class="cvalue" id="adult">3</span><button type="button" class="cbtn" id="add-adult">+</button>
+                                        <script>
+                                            const addbtn = document.getElementById("add-adult");
+                                            const sub = document.getElementById("subtr-adult");
+                                            const value = document.getElementById("adult")
+                                            addbtn.addEventListener("click",()=>{
+                                                value.innerHTML = Number(value.innerHTML)+1;
+                                            })
+                                            sub.addEventListener("click",()=>{
+                                                value.innerHTML = Number(value.innerHTML)>0?Number(value.innerHTML)-1:Number(value.innerHTML);
+                                            })                                    
+                                        </script>
+                                    </div>
+                                </div>
+                                <div class="p-elem">
+                                    <span>Child</span>
+                                    <div class="counter">
+                                        <button type="button" id="subtr-adult1" class="cbtn">-</button> <span class="cvalue" id="adult1">0</span><button type="button" class="cbtn" id="add-adult1">+</button>
+                                        <script>
+                                            const addbtn1 = document.getElementById("add-adult1");
+                                            const sub1 = document.getElementById("subtr-adult1");
+                                            const value1 = document.getElementById("adult1")
+                                            addbtn1.addEventListener("click",()=>{
+                                                value1.innerHTML = Number(value1.innerHTML)+1;
+                                            })
+                                            sub1.addEventListener("click",()=>{
+                                                value1.innerHTML = Number(value1.innerHTML)>0?Number(value1.innerHTML)-1:Number(value1.innerHTML);
+                                            })                                    
+                                        </script>
+                                    </div>
+                                </div>
+                                <div class="p-elem">
+                                    <span>Infants</span>
+                                    <div class="counter">
+                                        <button type="button" id="subtr-adult2" class="cbtn">-</button> <span class="cvalue" id="adult2">0</span><button type="button" class="cbtn" id="add-adult2">+</button>
+                                        <script>
+                                            const addbtn2 = document.getElementById("add-adult2");
+                                            const sub2 = document.getElementById("subtr-adult2");
+                                            const value2 = document.getElementById("adult2")
+                                            addbtn2.addEventListener("click",()=>{
+                                                value2.innerHTML = Number(value2.innerHTML)+1;
+                                            })
+                                            sub2.addEventListener("click",()=>{
+                                                value2.innerHTML = Number(value2.innerHTML)>0?Number(value2.innerHTML)-1:Number(value2.innerHTML);
+                                            })                                    
+                                        </script>
+                                    </div>
+                                </div>
+                                
+                                
                                 <div class="cl-title">Class</div>
                                 <select name="class" id="class" val>
                                     <option value="Business">Business</option>
@@ -252,7 +305,7 @@
 
 
                         <div class="input-block search-fl-btn">
-                            <button class="search-fl-btn" type="submit">Search Flight</button>
+                            <button  class="search-fl-btn" type="submit">Search Flight</button>
                         </div>
    
 
@@ -284,7 +337,7 @@
                                             <span class="coupon-title">Coupon:</span>
                                             <span class="coupon-code">NEWSITE50</span>
                                         </div>
-                                        <button class="book-btn">Book now</button>
+                                        <button type="button" class="book-btn">Book now</button>
                                     </div>
                                 </div>
                         </div>
@@ -304,7 +357,7 @@
                                             <span class="coupon-title">Coupon:</span>
                                             <span class="coupon-code">NEWSITE50</span>
                                         </div>
-                                        <button class="book-btn">Book now</button>
+                                        <button type="button" class="book-btn">Book now</button>
                                     </div>
                                 </div>
                         </div>
@@ -324,7 +377,7 @@
                                             <span class="coupon-title">Coupon:</span>
                                             <span class="coupon-code">NEWSITE50</span>
                                         </div>
-                                        <button class="book-btn">Book now</button>
+                                        <button type="button" class="book-btn">Book now</button>
                                     </div>
                                 </div>
                         </div>
@@ -344,7 +397,7 @@
                                             <span class="coupon-title">Coupon:</span>
                                             <span class="coupon-code">NEWSITE50</span>
                                         </div>
-                                        <button class="book-btn">Book now</button>
+                                        <button type="button" class="book-btn">Book now</button>
                                     </div>
                                 </div>
                         </div>
@@ -371,7 +424,7 @@
                             <div class="offer-price">$546</div>
                             <div class="offer-date">15Aug - 22Aug</div>
                             <div class="offer-book-btn">
-                                <button>
+                                <button type="button">
                                     <div class="btn-title">Book Now</div>
                                     <span class="book-icon" style="display: flex;align-items: center;">
                                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -394,7 +447,7 @@
                             <div class="offer-price">$345</div>
                             <div class="offer-date">15Aug - 22Aug</div>
                             <div class="offer-book-btn">
-                                <button>
+                                <button type="button">
                                     <div class="btn-title">Book Now</div>
                                     <span class="book-icon" style="display: flex;align-items: center;">
                                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -417,7 +470,7 @@
                             <div class="offer-price">$515</div>
                             <div class="offer-date">15Aug - 22Aug</div>
                             <div class="offer-book-btn">
-                                <button>
+                                <button type="button">
                                     <div class="btn-title">Book Now</div>
                                     <span class="book-icon" style="display: flex;align-items: center;">
                                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -440,7 +493,7 @@
                             <div class="offer-price">$395</div>
                             <div class="offer-date">15Aug - 22Aug</div>
                             <div class="offer-book-btn">
-                                <button>
+                                <button type="button">
                                     <div class="btn-title">Book Now</div>
                                     <span class="book-icon" style="display: flex;align-items: center;">
                                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -463,7 +516,7 @@
                             <div class="offer-price">$445</div>
                             <div class="offer-date">15Aug - 22Aug</div>
                             <div class="offer-book-btn">
-                                <button>
+                                <button type="button">
                                     <div class="btn-title">Book Now</div>
                                     <span class="book-icon" style="display: flex;align-items: center;">
                                         <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -486,7 +539,7 @@
                 </div>
                 
                 <div class="right">
-                    <button class="book-now">Book Now</button>
+                    <button type="button" class="book-now">Book Now</button>
                 </div>
                 <img src="/src/images/places/airplane-illustration.svg" alt="" srcset="">
             </div>
@@ -501,18 +554,60 @@
         
 </body>
 <script src="/src/js/main.js"></script>
+<style>
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cbtn{
+    padding: 2px 20px;
+    font-size: 16px;
+    font-weight: bolder;
+    border-radius: 999px;
+    border: none;
+    background-color: #177CFD;
+    color: #EAEFF6;
+}
+.cvalue{
+    padding: 2px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.p-elem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px;
+    color: #2a2a2a !important;
+    line-height: 16px !important;
+    padding-left: 0px !important;
+    letter-spacing: 0.293px;
+    text-transform: uppercase;
+}
+</style>
 <script>
+    // document.querySelector(".class-block").addEventListener("click",()=>{
+    //     document.querySelector(".class-input").classList.toggle("hidden");
+    // })
+    // function personchange(e){
+    //     document.getElementById("person-count").innerHTML = e.target.value + " Person";
+    // }
+    // function classchange(e){
+    //     document.getElementById("class-type").innerHTML = e.target.value;
+    // }
+    // document.getElementById("p-input").addEventListener("change",(e)=> personchange(e));
+    // document.getElementById("class").addEventListener("change",(e)=> classchange(e));
     document.querySelector(".class-block").addEventListener("click",()=>{
-        document.querySelector(".class-input").classList.toggle("hidden");
-    })
-    function personchange(e){
-        document.getElementById("person-count").innerHTML = e.target.value + " Person";
-    }
-    function classchange(e){
-        document.getElementById("class-type").innerHTML = e.target.value;
-    }
-    document.getElementById("p-input").addEventListener("change",(e)=> personchange(e));
-    document.getElementById("class").addEventListener("change",(e)=> classchange(e));
+                    document.querySelector(".class-input").classList.toggle("hidden");
+                    var val1 =  Number(document.getElementById("adult").innerHTML)
+                    var val2 =  Number(document.getElementById("adult1").innerHTML)
+                    var val3 =  Number(document.getElementById("adult2").innerHTML)
+                    document.querySelector("#person-count").innerHTML = `${val1+val2+val3} Persons`
+                })
 </script>
 <script>
     const tabMenu = document.querySelector(".cardcontainer");
