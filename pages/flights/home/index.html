@@ -296,12 +296,62 @@
                                 
                                 
                                 <div class="cl-title">Class</div>
-                                <select name="class" id="class" val>
+                                <select name="class" id="class">
                                     <option value="Business">Business</option>
                                     <option value="Economy">Economy</option>
                                 </select>
+                                <div class="buttons">
+                                    <button type="button" onclick="cancel();" class="cancel-btn">Cancel</button>
+                                    <button type="button" onclick="apply();" class="apply-btn">Apply</button>                            
+                                </div>
+                                <style>
+                                    .buttons{
+                                        display: flex;
+                                        justify-content: flex-end;
+                                        gap: 10px;
+                                        margin-top: 10px;
+                                    }
+                                    .buttons button{                
+                                        padding: 10px 15px;
+                                        border-radius:8px;
+                                        border: none;
+                                        outline: none;
+                                        cursor: pointer;
+                                    }
+                                    .apply-btn{
+                                        background-color: #0fa7ff;
+                                        color: white;
+                                    }
+                                    .cancel-btn{
+                                        background-color: #f01515b0;
+                                        color: #FFF;
+                                    }
+                                </style>
+                                <script>
+                                    var drp_val ="";
+                                    function classchange(e){
+                                        drp_val = e.target.value;
+                                    }
+                                    document.getElementById("class").addEventListener("change",(e)=> classchange(e));
+                                    function apply(){
+                                        var val1 =  Number(document.getElementById("adult").innerHTML)
+                                        var val2 =  Number(document.getElementById("adult1").innerHTML)
+                                        var val3 =  Number(document.getElementById("adult2").innerHTML)
+                                        document.querySelector("#person-count").innerHTML = `${val1+val2+val3} Persons`
+                                        document.getElementById("class-type").innerHTML = drp_val;
+                                        document.querySelector(".class-input").classList.add("hidden");
+                                    }
+                                    function cancel(){
+                                        document.querySelector(".class-input").classList.add("hidden");
+                                    }
+                                    document.querySelector(".class-block").addEventListener("click",()=>{
+                                        document.querySelector(".class-input").classList.toggle("hidden");
+                                    })
+                                </script>
+                                
                             </div>
                         </div>
+                        
 
 
                         <div class="input-block search-fl-btn">
@@ -597,17 +647,13 @@
     //     document.getElementById("person-count").innerHTML = e.target.value + " Person";
     // }
     // function classchange(e){
-    //     document.getElementById("class-type").innerHTML = e.target.value;
+        
     // }
     // document.getElementById("p-input").addEventListener("change",(e)=> personchange(e));
     // document.getElementById("class").addEventListener("change",(e)=> classchange(e));
-    document.querySelector(".class-block").addEventListener("click",()=>{
-                    document.querySelector(".class-input").classList.toggle("hidden");
-                    var val1 =  Number(document.getElementById("adult").innerHTML)
-                    var val2 =  Number(document.getElementById("adult1").innerHTML)
-                    var val3 =  Number(document.getElementById("adult2").innerHTML)
-                    document.querySelector("#person-count").innerHTML = `${val1+val2+val3} Persons`
-                })
+    // document.querySelector(".class-block").addEventListener("click",()=>{
+    //     document.querySelector(".class-input").classList.toggle("hidden");
+    // })
 </script>
 <script>
     const tabMenu = document.querySelector(".cardcontainer");
