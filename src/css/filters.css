@@ -4,6 +4,7 @@
     background-color: var(--color-white);
     border-radius: var(--rounded-lg);
     overflow: hidden;
+    padding-bottom:10px ;
 }
 @media screen and (max-width: 650px){
     .results .filters{
@@ -29,6 +30,11 @@
 }
 .fi-body .price{
     width: 100%;
+}
+.fi-body form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0px;
 }
 .price-head,.stop-head{
     width: 100%;

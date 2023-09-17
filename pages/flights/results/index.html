@@ -282,7 +282,7 @@
                         </select>
 
                         <div class="buttons">
-                            <button type="button" onclick="cancel();" class="cancel-btn">Cancel</button>
+                            <button type="button" onclick="cancel();" class="cancel-btn">Reset</button>
                             <button type="button" onclick="apply();" class="apply-btn">Apply</button>                            
                         </div>
                         <style>
@@ -291,6 +291,7 @@
                                 justify-content: flex-end;
                                 gap: 10px;
                                 margin-top: 10px;
+                                padding-right: 10px;
                             }
                             .buttons button{                
                                 padding: 10px 15px;
@@ -382,6 +383,7 @@
                     <div id="second-filter" class="filters f-hidden">
                         <!-- <div class="fi-head">Filters</div> -->
                         <div class="fi-body">
+                            <form>
                             <div class="price heads">
                                 <div class="price-head">
                                     <span>Price</span>
@@ -431,6 +433,16 @@
                                         </div>
                                 </div>
                             </div>
+                            <div class="buttons">
+                                <button type="reset" class="cancel-btn">Reset </button>
+                                <button type="submit" onclick="done();" class="apply-btn">Apply Filters</button>                            
+                            </div>
+                            </form>
+                            <script>
+                                function done(){
+                                    document.querySelector(".filters-nav").classList.remove("open");
+                                }
+                            </script>
                         </div>
                     </div>
                 </div>
@@ -716,6 +728,7 @@
             <div id="main-filter" class="filters">
                 <div class="fi-head">Filters</div>
                 <div class="fi-body">
+                    <form >
                     <div class="price heads">
                         <div class="price-head">
                             <span>Price</span>
@@ -730,7 +743,7 @@
                         </div>
                         <div class="stop-drp">
                             <span>via</span>
-                            <select class="drp" name="cars" id="cars">
+                            <select class="drp" name="cars" id="stop">
                                 <option value="la">Los angeles,UAS</option>
                                 <option value="dl">Delhi,India</option>
                                 <option value="la">Dhaka,Bangladesh</option>
@@ -743,7 +756,7 @@
                         </div>
                         <div class="stop-drp">
                             <span>via</span>
-                            <select class="drp" name="cars" id="cars">
+                            <select class="drp" name="cars" id="airlines">
                                 <option value="la">Quatar Airways</option>
                                 <option value="dl">Air India</option>
                                 <option value="la">Indigo</option>
@@ -765,8 +778,15 @@
                                 </div>
                         </div>
                     </div>
-                </div>
+                    <div class="buttons">
+                        <button type="reset" class="cancel-btn">Reset </button>
+                        <button type="submit" class="apply-btn">Apply Filters</button>                            
+                    </div>
+                    </form>           
             </div>
+            <script>
+                
+            </script>
         </div>
 
     </section>        
