@@ -220,9 +220,7 @@
     line-height: normal;
     letter-spacing: 0.13px;
 }
-.trvl-input-grp select.cc{
-    /* width: 150px; */
-}
+
 .pass-details{
     display: flex;
     gap: 20px 20px;

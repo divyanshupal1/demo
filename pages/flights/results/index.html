@@ -776,9 +776,10 @@
 </style>
 <script src="/src/js/main.js"></script>
 <script>
-    const f_nav = document.querySelector(".filters-nav");
+    const f_bd = document.querySelector(".filters-nav");
+    const f_nav = document.querySelector(".filter-head");
     f_nav.addEventListener('click',()=>{
-        f_nav.classList.toggle("open");
+        f_bd.classList.toggle("open");
     })
     var filter_btn = document.querySelectorAll('.filter-btn');
     filter_btn.forEach((item,index)=>{
